@@ -119,83 +119,219 @@
     border-radius: 5px;
 }
 
-.container{
+.container {
     width: 1000px;
     position: relative;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin-left: 170px;
- }
- .container .card{
+    gap: 20px; /* Adjust the gap between cards */
+    margin-bottom: 150px; /* Add margin to the bottom of the container to space between rows */
+    margin-left: 150px;
+}
+
+.container .card {
     position: relative;
- }
- .container .card .face{
-    width: 300px;
-    height: 200px;
+    width: 250px; /* Reduce the width of the cards */
+    height: 180px; /* Reduce the height of the cards */
     transition: 0.5s;
- }
- .container .card .face.face1{
+}
+
+.container .card .face {
+    width: 100%; /* Ensure the face elements take up the full card width */
+    height: 100%; /* Ensure the face elements take up the full card height */
+    transition: 0.5s;
+}
+
+.container .card .face.face1 {
     position: relative;
-    background:#4ba3b7;;
+    background: #6d73c6;
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 1;
-    transform:translateY(100px) ;
- }
- .container .card:hover .face.face1{
-    background:#4ba3b7;;
-    transform: translateY(0px);
- }
-    
- .container .card .face.face1 .content
- { 
-   transition: 0.05s; 
+    transform: translateY(90px); /* Adjust the translate value */
+}
 
- }
- .container .card:hover .face.face1 .content{
-    opacity:1 ;
- }
- .container .card .face.face1 .content img{
-    max-width: 100px;
- }
- .container .card .face.face1 .content h3{
+.container .card:hover .face.face1 {
+    background: #080b38;
+    transform: translateY(0px);
+}
+
+.container .card .face.face1 .content {
+    transition: 0.05s;
+}
+
+.container .card:hover .face.face1 .content {
+    opacity: 1;
+}
+
+.container .card .face.face1 .content img {
+    max-width: 80px; /* Reduce the size of images inside the cards */
+}
+
+.container .card .face.face1 .content h3 {
     margin: 10px 0 0;
     padding: 0;
     color: #fff;
     text-align: center;
-    font-size: 1.5em;
- }
- .container .card .face.face2{
-       position: relative;
-       background: #fff;
-       display: flex;
-       justify-content: center;
-       align-items: center;
-       padding: 20px;
-       box-sizing: border-box;
-       box-shadow:0 20px 50px rgba(0, 0, 0, 0.8) ;
-       transform:translateY(-100px) ;
-       
- }
- .container .card:hover .face.face2{
-    transform:translateY(0) ;
- }
- .container .card .face.face2 .content p{
-         margin: 0;
-         padding: 0;
- }
- .container .card .face.face2 .content a{
-        margin: 15px 0 0;
-        display: inline-block;
-        text-decoration: none;
-        font-weight: 900;
-        color:#4ba3b7;;
-        padding: 5px;
-        border: 1px solid #333;
- }
- .container .card .face.face2 .content a:hover{
-       background: #333;
-       color: #fff;
- }
+    font-size: 30px; /* Adjust the font size */
+}
+
+.container .card .face.face2 {
+    position: relative;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px; /* Reduce padding inside the cards */
+    box-sizing: border-box;
+    
+    transform: translateY(-90px); /* Adjust the translate value */
+}
+
+.container .card:hover .face.face2 {
+    transform: translateY(0);
+}
+
+.container .card .face.face2 .content p {
+    margin: 0;
+    padding: 0;
+    font-size: 20px /* Adjust the font size */
+}
+
+.container .card .face.face2 .content a {
+    margin: 10px 0 0;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 900;
+    color: #22badc;
+    padding: 5px;
+    border: 1px solid #333;
+}
+
+.container .card .face.face2 .content a:hover {
+    background: #333;
+    color: #fff;
+}
+#heading1{
+    margin-top: 50px;
+    font-size: 28px;
+}
+
+
+#whychooseus{
+    height: 550px;
+    width: 100%;
+     border: 1px solid rgb(244, 246, 244);
+    
+}
+#why1{
+    height: 500px;
+    width: 35%;
+    border: 1px solid purple;
+    float: left;
+    margin-left: 70PX;
+
+    margin-top: 80px;
+    border-radius: 50px;
+
+}
+#why2{
+    height: 400px;
+    width: 48%;
+    
+    margin-left: 600px;
+    margin-top: 140px;
+    border-radius: 50px;
+    background-color:#6d73c6 ;
+
+}
+#why2 h1{
+    font-size: 45px;
+    color: aliceblue;
+    margin-left: 180px;
+}
+#why2 h3{
+    font-size: 20px;
+    color: white;
+    margin-left: 20px;
+}
+
+#ourservices{
+    margin-top: 150px;
+    height: 500px;
+    width: 100%;
+    border: 1px solid rgb(250, 252, 250);
+}
+#services1{
+    height: 450px;
+    width: 45%;
+    
+    margin-top:70px;
+    margin-left: 50px;
+    border-radius: 50px;
+    background-color: #6d73c6;
+    float: left;
+}
+#services1 h1{
+    font-size: 45px;
+    color: white;
+    margin-left: 170px;
+  
+}
+
+#services1 h3{
+    color: white;
+    font-size: 20px;
+    margin-left: 15px;
+}
+#services2{
+
+    height: 550px;
+    width: 40%;
+    border: 1px solid green ;
+    margin-top:10px;
+    margin-left: 700px;
+    border-radius: 50px;
+}
+
+#join{
+    height: 650px;
+    width:100%;
+    border: 1px solid rgb(246, 247, 246);
+    margin-top: 120px;
+
+}
+#join1{
+    height: 550px;
+    width: 40%;
+    border: 1px solid red;
+    margin-top: 50px;
+border-radius: 50px;
+margin-left: 50px;
+float: left;
+}
+#join2{
+    height: 350px;
+    width: 40%;
+
+    margin-top: 170px;
+border-radius: 50px;
+margin-left: 650px;
+background-color: #6d73c6;
+}
+
+#join2 h1{
+    font-size: 45px;
+    color: white;
+    margin-left: 180px;
+  
+}
+
+#join2 h3{
+    color: white;
+    font-size: 20px;
+    margin-left: 20px;
+}
+
